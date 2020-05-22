@@ -41,9 +41,14 @@ function App() {
       </form>
     )
     :
-      <div> <button type="submit" className="stop-btn" onClick={() => changeTimer(false)}> STOP </button> </div>
-      
+      <div> 
+        <button type="submit" className="stop-btn" onClick={() => changeTimer(false)}> STOP </button> 
+        <br/> <br/> <br/> <br/> <br/> 
+        <button type="submit" className="timer-btn" > COUNTDOWN TIMER </button> 
+      </div>
     }
+
+
     </div>
   );
 }
