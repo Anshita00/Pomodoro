@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DurationSelection from "./DurationSelection";
 
 function App() {
 
@@ -14,9 +15,7 @@ function App() {
     <div className="App">
     { showTimer
         ? <div> {time} </div> 
-        : <div>
-            Select duration screen
-         </div> 
+        : <DurationSelection />
     }
     </div>
   );
