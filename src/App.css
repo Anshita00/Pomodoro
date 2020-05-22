@@ -1,0 +1,46 @@
+/* input, input:focus {
+    border: None;
+    outline: None;
+}
+
+/* Chrome, Safari, Edge, Opera */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}  */
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+body {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #ffefdb;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.form-group {
+    text-align: center;
+}
+
+.start-btn {
+    margin-top: 50px;
+    background-color: #79d70f;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    font-size: 3rem;
+    color: #000;
+    font-family: 'Libre Baskerville', serif;
+    border-radius: 100%;
+    border-width: 2px;
+    border-color: black;
+
+}
