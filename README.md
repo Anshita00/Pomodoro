@@ -6,7 +6,7 @@ TODO:
 
 - Add a timer to the second screen
   - ~Add a simple countdown timer~
-  - Timer switches from study to breaks and breaks to study on reaching 0
+  - ~Timer switches from study to breaks and breaks to study on reaching 0~
   - Add styling and CSS
 - Add a stop button to second screen
 - Add customization for stop time
