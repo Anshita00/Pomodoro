@@ -5,14 +5,14 @@ import './App.css';
 function Timer(props) {
 
   const studyTime = {
-    minutes: 0,
-    seconds: 5,
+    minutes: 25,
+    seconds: 0,
     isStudy: true
   };
 
   const breakTime = {
-    minutes: 0,
-    seconds: 4,
+    minutes: 5,
+    seconds: 0,
     isStudy: false
   };
 
