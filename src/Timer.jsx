@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
+import Stop from "./Stop";
 import './App.css';
 
-function Timer() {
+function Timer(props) {
 
   const studyTime = {
-    minutes: 25,
-    seconds: 0,
+    minutes: 0,
+    seconds: 5,
     isStudy: true
   };
 
   const breakTime = {
-    minutes: 5,
-    seconds: 0,
+    minutes: 0,
+    seconds: 4,
     isStudy: false
   };
 
@@ -20,10 +21,10 @@ function Timer() {
   function changeTime() {
     clearInterval(interval);
     var changes = {};
-    if (time.seconds == 0 && time.minutes == 0) {
+    if (time.seconds === 0 && time.minutes === 0) {
       var newTime = !time.isStudy;
-      changes = newTime == true ? studyTime: breakTime;
-    } else if (time.seconds == 0) {
+      changes = newTime === true ? studyTime: breakTime;
+    } else if (time.seconds === 0) {
       changes.seconds = 59;
       changes.minutes = time.minutes - 1;
     } else {
@@ -42,10 +43,21 @@ function Timer() {
   let interval = setInterval(changeTime, "1000");
 
   return (
-      <div>
-        <span class="timer">
-          {time.minutes} {time.seconds}
+      <div class="timer-div">
+        <span class="timer-span">
+          {time.minutes} : {time.seconds}
         </span>
+        <br />
+        {time.isStudy ? 
+        (
+          <div class="badge badge-danger">Study</div>
+        ) 
+        :
+        (
+          <div class="badge badge-success">Break</div>    
+        )
+        }
+        <Stop onChange={props.onChange} />
       </div>
   );
 }
