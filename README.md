@@ -10,6 +10,10 @@ TODO:
   - ~Add styling and CSS~
 - ~Add a stop button to second screen~
 - Add customization for stop time
+   - Add settings tab on the right
+   - Add set stop time in the settings tab
+   - Create a way to set a custom stop time on clicking 'Change stop time' in settings
+   - A timer should start at the bottom showing how much total time is left until end of study session
 - Add customization for study duration + break duration 
 
 *Note - Work in progress*
