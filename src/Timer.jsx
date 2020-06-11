@@ -39,13 +39,17 @@ function Timer(props) {
     });
   } 
 
+  function pad(num) {
+    return num < 10 ? "0" + num : num;
+  }
+
 
   let interval = setInterval(changeTime, "1000");
 
   return (
       <div class="timer-div">
         <span class="timer-span">
-          {time.minutes} : {time.seconds}
+          {time.minutes} : {pad(time.seconds)}
         </span>
         <br />
         {time.isStudy ? 
