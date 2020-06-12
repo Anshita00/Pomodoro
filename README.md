@@ -1,6 +1,6 @@
 ## Pomodoro
 
-An app that helps you stay focussed while working/studying by breaking down your study session into managable 25 minute chunks.
+An app that helps you stay focussed while working/studying by breaking down your study session into managable 25 minute chunks. It is hosted here: https://zen-fermat-b1a817.netlify.app/
 
 TODO:
 
@@ -17,3 +17,4 @@ TODO:
 - Add customization for study duration + break duration 
 
 *Note - Work in progress*
+
