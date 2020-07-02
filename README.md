@@ -9,6 +9,8 @@ TODO:
   - ~Timer switches from study to breaks and breaks to study on reaching 0~
   - ~Add styling and CSS~
 - ~Add a stop button to second screen~
+- ~Add ability to switch between break and study~
+- Add sound effects and notification
 - Add customization for stop time
    - Add settings tab on the right
    - Add set stop time in the settings tab
