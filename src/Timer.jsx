@@ -18,6 +18,20 @@ function Timer(props) {
 
   const [time, setTime] = useState(studyTime);
 
+  function changeStudy() {
+    clearInterval(interval);
+    var changes = {};
+    const newValue = !time.isStudy;
+    changes = newValue === true ? studyTime: breakTime;
+
+    setTime(prev => {
+      return {
+        ...prev,
+        ...changes
+      };
+    });
+  }
+
   function changeTime() {
     clearInterval(interval);
     var changes = {};
@@ -54,11 +68,11 @@ function Timer(props) {
         <br />
         {time.isStudy ? 
         (
-          <div class="badge badge-danger">Study</div>
+          <div class="badge badge-danger" onClick={changeStudy}>Study</div>
         ) 
         :
         (
-          <div class="badge badge-success">Break</div>    
+          <div class="badge badge-success" onClick={changeStudy}>Break</div>    
         )
         }
         <Stop onChange={props.onChange} />
